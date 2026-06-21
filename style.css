@@ -131,6 +131,132 @@ font-size:25px;
 animation:float 6s linear infinite;
 }
 
+.page-header{
+    position:absolute;
+    top:15px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    color:white;
+    font-size:14px;
+}
+
+.passcode-layout{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.photo-section{
+    position:relative;
+}
+
+.polaroid-frame{
+    background:white;
+    padding:15px 15px 50px;
+    border-radius:5px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.polaroid-photo{
+    width:250px;
+    height:300px;
+    object-fit:cover;
+}
+
+.duck{
+    position:absolute;
+    bottom:-20px;
+    left:-20px;
+    font-size:60px;
+}
+
+.keypad-section{
+    text-align:center;
+}
+
+.pin-display{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:20px 0;
+}
+
+.pin-box{
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:10px;
+    border:4px solid #ddd;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:32px;
+    font-weight:bold;
+    color:#c62828;
+}
+
+.keypad{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.keypad button{
+    width:75px;
+    height:75px;
+
+    border-radius:50%;
+    background:white;
+
+    border:none;
+
+    font-size:30px;
+    font-weight:bold;
+
+    color:black;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.keypad button:hover{
+    transform:scale(1.05);
+}
+
+.hint{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .passcode-layout{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .polaroid-photo{
+        width:220px;
+        height:270px;
+    }
+
+    .pin-box{
+        width:50px;
+        height:50px;
+    }
+
+    .keypad button{
+        width:65px;
+        height:65px;
+    }
+}
+
 @keyframes float{
 
 0%{
