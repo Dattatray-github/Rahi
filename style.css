@@ -13,13 +13,14 @@ color:white;
 }
 
 .page{
-display:none;
-height:100vh;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-padding:20px;
-text-align:center;
+    display:none;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px 20px;
+    text-align:center;
+    overflow-y:auto;
 }
 
 .active{
@@ -234,6 +235,20 @@ animation:float 6s linear infinite;
     margin-top:20px;
     font-size:18px;
     font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .page{
+        justify-content:flex-start;
+        padding-top:30px;
+        padding-bottom:50px;
+    }
+
+    .passcode-layout{
+        flex-direction:column;
+        gap:30px;
+    }
 }
 
 @media(max-width:768px){
