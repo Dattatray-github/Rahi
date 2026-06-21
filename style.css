@@ -15,10 +15,10 @@ color:white;
 .page{
     display:none;
     min-height:100vh;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     flex-direction:column;
-    padding:30px 20px;
+    padding:30px 20px 50px;
     text-align:center;
     overflow-y:auto;
 }
@@ -111,6 +111,10 @@ gap:20px;
 max-width:1000px;
 width:100%;
 }
+.gallery{
+    max-height:60vh;
+    overflow-y:auto;
+}
 
 .memory img{
 width:100%;
@@ -163,11 +167,16 @@ animation:float 6s linear infinite;
     border-radius:5px;
     box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
+.polaroid-frame{
+    width:90%;
+    max-width:280px;
+}
 
 .polaroid-photo{
-    width:250px;
-    height:300px;
-    object-fit:cover;
+    width:100%;
+    max-width:250px;
+    height:auto;
+    display:block;
 }
 
 .duck{
