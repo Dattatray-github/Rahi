@@ -36,7 +36,7 @@ function clearPin(){
 
 function submitPin(){
 
-    const correctPin = "2302";
+    const correctPin = "2214";
 
     if(enteredPin === correctPin){
 
