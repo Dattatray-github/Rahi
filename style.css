@@ -368,6 +368,19 @@ to{
 
 }
 
+.title-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.line{
+    width:80px;
+    height:2px;
+    background:white;
+}
+
 @keyframes float{
 
 0%{
