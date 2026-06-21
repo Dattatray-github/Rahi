@@ -44,11 +44,15 @@ function submitPin(){
 
     if(enteredPin === correctPin){
 
-        createConfetti();
+    document
+    .getElementById("bgMusic")
+    .play();
 
-        setTimeout(() => {
-            showPage(2);
-        }, 1000);
+    createConfetti();
+
+    setTimeout(() => {
+        showPage(2);
+    }, 1000);
 
     }else{
 
