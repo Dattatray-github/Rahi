@@ -9,14 +9,18 @@ font-family:Arial,sans-serif;
 overflow-x:hidden;
 overflow-y:auto;
 color:white;
-    background: linear-gradient(
-        135deg,
-        #c79081,
-        #dfa579,
-        #f6d365
-    );
-}
 
+background:
+linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
+url("images/love.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
 .page{
     display:none;
     min-height:100vh;
