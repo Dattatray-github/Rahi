@@ -1,22 +1,60 @@
 let currentPage = 1;
 
-function unlock(){
+let enteredPin = "";
 
-const code =
-document.getElementById("passcode").value;
+function pressKey(value){
 
-if(code === "2214"){
+    if(enteredPin.length >= 4){
+        return;
+    }
 
-showPage(2);
+    enteredPin += value;
 
-}
-else{
-
-alert("Wrong Passcode ❤️");
-
+    updatePinBoxes();
 }
 
+function updatePinBoxes(){
+
+    document.getElementById("box1").innerHTML =
+        enteredPin[0] || "";
+
+    document.getElementById("box2").innerHTML =
+        enteredPin[1] || "";
+
+    document.getElementById("box3").innerHTML =
+        enteredPin[2] || "";
+
+    document.getElementById("box4").innerHTML =
+        enteredPin[3] || "";
 }
+
+function clearPin(){
+
+    enteredPin = "";
+    updatePinBoxes();
+}
+
+function submitPin(){
+
+    const correctPin = "2302";
+
+    if(enteredPin === correctPin){
+
+        createConfetti();
+
+        setTimeout(() => {
+            showPage(2);
+        }, 1000);
+
+    }else{
+
+        alert("Wrong Passcode ❤️");
+
+        clearPin();
+    }
+}
+
+
 
 function showPage(page){
 
