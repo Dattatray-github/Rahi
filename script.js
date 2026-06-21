@@ -115,7 +115,7 @@ for(let i=0;i<100;i++){
 const confetti =
 document.createElement("div");
 
-confetti.innerHTML="🎉";
+confetti.innerHTML="💕";
 
 confetti.style.position="absolute";
 
