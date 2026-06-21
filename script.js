@@ -96,6 +96,18 @@ nextPage();
 
 }
 
+function scrollGallery(direction){
+
+    const gallery =
+    document.getElementById("gallery");
+
+    gallery.scrollBy({
+        left: direction * 300,
+        behavior: "smooth"
+    });
+
+}
+
 function createConfetti(){
 
 for(let i=0;i<100;i++){
