@@ -11,6 +11,10 @@ function pressKey(value){
     enteredPin += value;
 
     updatePinBoxes();
+
+    if(enteredPin.length === 4){
+        submitPin();
+    }
 }
 
 function updatePinBoxes(){
@@ -132,8 +136,7 @@ confetti.remove();
 }
 
 }
-
-setInterval(()=>{
+const heartInterval = setInterval(()=>{
 
 const heart =
 document.createElement("div");
