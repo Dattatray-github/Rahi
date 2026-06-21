@@ -5,7 +5,7 @@ function unlock(){
 const code =
 document.getElementById("passcode").value;
 
-if(code === "1107"){
+if(code === "2214"){
 
 showPage(2);
 
